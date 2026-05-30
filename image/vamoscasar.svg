@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="roseGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0A995" />
+      <stop offset="50%" stop-color="#F3C5B5" />
+      <stop offset="100%" stop-color="#C28E7A" />
+    </linearGradient>
+    <linearGradient id="goldRing" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#D4AF37" />
+      <stop offset="50%" stop-color="#F3E5AB" />
+      <stop offset="100%" stop-color="#AA7C11" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(0, -20)">
+    <path d="M 220,220 C 250,220 260,140 300,140 C 330,140 340,190 360,190" fill="none" stroke="url(#roseGold)" stroke-width="8" stroke-linecap="round"/>
+    
+    <rect x="330" y="190" width="80" height="80" rx="6" fill="none" stroke="url(#roseGold)" stroke-width="8"/>
+    <line x1="370" y1="190" x2="370" y2="270" stroke="url(#roseGold)" stroke-width="8"/>
+    <path d="M 320,190 L 420,190" stroke="url(#roseGold)" stroke-width="10" stroke-linecap="round"/>
+    
+    <path d="M 370,190 C 350,130 290,130 330,185 C 350,210 390,210 410,185 C 450,130 390,130 370,190" fill="none" stroke="url(#roseGold)" stroke-width="8" stroke-linecap="round"/>
+
+    <circle cx="430" cy="230" r="35" fill="none" stroke="url(#goldRing)" stroke-width="8"/>
+    
+    <circle cx="475" cy="220" r="35" fill="none" stroke="url(#goldRing)" stroke-width="8"/>
+    <path d="M 465,180 L 485,180 L 495,168 L 475,153 L 455,168 Z" fill="url(#roseGold)"/>
+    
+    <path d="M 510,225 C 550,225 560,190 600,190" fill="none" stroke="url(#roseGold)" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <text x="400" y="340" font-family="'Cinzel', 'Playfair Display', 'Georgia', serif" font-size="42" font-weight="bold" fill="#333333" text-anchor="middle" letter-spacing="4">VAMOS NOS CASAR</text>
+  <text x="400" y="385" font-family="'Montserrat', 'Lato', 'Helvetica', sans-serif" font-size="20" font-weight="300" fill="#777777" text-anchor="middle" letter-spacing="6">SUA LISTA ONLINE</text>
+</svg>
