@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/admin.css">
     <title>Área administrativa</title>
 </head>
 
@@ -34,6 +35,54 @@
             </div>
         </div>
     </nav>
+
+    <div class="page">
+
+        <div class="contagem-card">
+            <span class="subtitle">O grande dia está chegando</span>
+
+            <div class="timer">
+                <div class="unit">
+                    <span class="num" id="dias">00</span>
+                    <span class="label">Dias</span>
+                </div>
+                <div class="unit">
+                    <span class="num" id="horas">00</span>
+                    <span class="label">Horas</span>
+                </div>
+                <div class="unit">
+                    <span class="num" id="minutos">00</span>
+                    <span class="label">Minutos</span>
+                </div>
+                <div class="unit">
+                    <span class="num" id="segundos">00</span>
+                    <span class="label">Segundos</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <div class="action-card">
+                <div class="action-text">
+                    <p class="title">Editar Site</p>
+                    <p class="desc">Cores, fotos e história</p>
+                </div>
+            </div>
+            <div class="action-card">
+                <div class="action-text">
+                    <p class="title">Lista de Presentes</p>
+                    <p class="desc">Adicionar/remover itens</p>
+                </div>
+            </div>
+            <div class="action-card">
+                <div class="action-text">
+                    <p class="title">Doações Recebidas</p>
+                    <p class="desc">Quem já te presenteou</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
