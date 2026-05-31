@@ -1,5 +1,6 @@
 <?php 
-
+require("funcoes.php");
+autenticar();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br" data-bs-theme="dark">
@@ -14,6 +15,7 @@
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
             <img src="image/vamoscasar.svg" alt="logo" width="150px">
@@ -23,7 +25,10 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item col-5">
-                        <a class="nav-link" href="#lista">Editar lista</a>
+                        <a class="nav-link" href="#lista">Adicionar a lista</a>
+                    </li>
+                    <li class="nav-item col-5">
+                        <a class="nav-link" href="listar_presentes.php">Listar Presentes</a>
                     </li>
                     <li class="nav-item col-4">
                         <a class="nav-link" href="#">Recebidos</a>
@@ -36,22 +41,29 @@
         </div>
     </nav>
 
-    <div class="page container">
+    <?php if (isset($_GET['sucesso'])): ?>
+    <div class="alert alert-success alert-dismissible fade show m-3 mt-5" role="alert">
+        Item adicionado com sucesso!
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+    <?php endif; ?>
+
+    <div class="page ">
 
         <div class="contagem-card">
             <span class="subtitle">O grande dia está chegando</span>
 
             <div class="timer">
                 <div class="unit">
-                    <span class="num" id="dias">00</span>
+                    <span class="num" id="dias">301</span>
                     <span class="label">Dias</span>
                 </div>
                 <div class="unit">
-                    <span class="num" id="horas">00</span>
+                    <span class="num" id="horas">23</span>
                     <span class="label">Horas</span>
                 </div>
                 <div class="unit">
-                    <span class="num" id="minutos">00</span>
+                    <span class="num" id="minutos">30</span>
                     <span class="label">Minutos</span>
                 </div>
                 <div class="unit">
@@ -66,29 +78,33 @@
 
     <section class="container mt-4" id="lista">
         <h1>Lista de Presentes</h1>
-        <h2>Adicionar ou remover itens</h2>
-        <form>
+        <h2>Adicionar itens</h2>
+        <form action="incluir_produto.php" method="POST">
             <div class="mb-3">
-                <label for="itemName" class="form-label">Nome do item</label>
-                <input type="text" class="form-control" id="itemName" placeholder="Ex: Jogo de panelas">
+                <label for="itemNome" class="form-label">Nome do item</label>
+                <input type="text" class="form-control" id="itemNome" name="itemNome" placeholder="Ex: Jogo de panelas"
+                    required>
             </div>
             <div class="mb-3">
-                <label for="itemDescription" class="form-label">Descrição</label>
-                <textarea class="form-control" id="itemDescription" rows="3"
-                    placeholder="Ex: Conjunto de panelas antiaderentes, ideal para cozinhar com facilidade."></textarea>
+                <label for="itemDescricao" class="form-label">Descrição</label>
+                <textarea class="form-control" id="itemDescricao" name="itemDescricao" rows="3"
+                    placeholder="Ex: Conjunto de panelas antiaderentes, ideal para cozinhar com facilidade."
+                    required></textarea>
             </div>
             <div class="mb-3">
                 <label for="itemPreco" class="form-label">Preço</label>
-                <input type="number" class="form-control" id="itemPreco" placeholder="Ex: 199.99" step="0.01">
+                <input type="number" class="form-control" id="itemPreco" name="itemPreco" placeholder="Ex: 199.99"
+                    step="0.01" required>
             </div>
             <div class="mb-3">
                 <label for="itemImage" class="form-label">URL da imagem</label>
-                <input type="url" class="form-control" id="itemImage"
-                    placeholder="Ex: https://www.exemplo.com/panela.jpg">
+                <input type="url" class="form-control" id="itemImage" name="itemImage"
+                    placeholder="Informe o URL da imagem do item" required>
             </div>
             <div class=" mb-3">
                 <label for="itemLink" class="form-label">Link de compra</label>
-                <input type="url" class="form-control" id="itemLink" placeholder="Ex: https://www.exemplo.com/panela">
+                <input type="url" class="form-control" id="itemLink" name="itemLink"
+                    placeholder="Informe o link de compra do item" required>
             </div>
             <button type="submit" class="btn btn-primary">Adicionar Item</button>
     </section>

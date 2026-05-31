@@ -2,7 +2,7 @@
 $tipo_banco = "mysql";
 $servidor = "localhost";
 $porta = "3306";
-$banco = "FatecShop";
+$banco = "VamosCasar";
 $usuario = "php";
 $senha = "senha123";
 
