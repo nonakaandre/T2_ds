@@ -1,7 +1,13 @@
+body {
+    padding-top: 80px;
+}
+
 .page {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 80px;
+    margin-bottom: 50px;
 }
 
 .contagem-card {
@@ -39,29 +45,11 @@
     font-size: 24px;
     color: #333;
     min-width: 60px;
-    
+
 }
 
 .unit-label {
     font-size: 12px;
     color: #666;
     margin-top: 5px;
-}
-
-.sidebar {
-    height: 300px;
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-.action-card {
-    height: 80px;
-    background-color: #fff;
-    border-radius: 4px;
-    padding: 15px;
-    margin-bottom: 15px;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }

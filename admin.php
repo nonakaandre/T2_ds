@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
         <div class="container-fluid">
             <img src="image/vamoscasar.svg" alt="logo" width="150px">
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -23,7 +23,7 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item col-5">
-                        <a class="nav-link" href="#">Adicionar lista</a>
+                        <a class="nav-link" href="#lista">Editar lista</a>
                     </li>
                     <li class="nav-item col-4">
                         <a class="nav-link" href="#">Recebidos</a>
@@ -36,7 +36,7 @@
         </div>
     </nav>
 
-    <div class="page">
+    <div class="page container">
 
         <div class="contagem-card">
             <span class="subtitle">O grande dia está chegando</span>
@@ -61,28 +61,37 @@
             </div>
         </div>
 
-        <div class="sidebar">
-            <div class="action-card">
-                <div class="action-text">
-                    <p class="title">Editar Site</p>
-                    <p class="desc">Cores, fotos e história</p>
-                </div>
-            </div>
-            <div class="action-card">
-                <div class="action-text">
-                    <p class="title">Lista de Presentes</p>
-                    <p class="desc">Adicionar/remover itens</p>
-                </div>
-            </div>
-            <div class="action-card">
-                <div class="action-text">
-                    <p class="title">Doações Recebidas</p>
-                    <p class="desc">Quem já te presenteou</p>
-                </div>
-            </div>
-        </div>
 
     </div>
+
+    <section class="container mt-4" id="lista">
+        <h1>Lista de Presentes</h1>
+        <h2>Adicionar ou remover itens</h2>
+        <form>
+            <div class="mb-3">
+                <label for="itemName" class="form-label">Nome do item</label>
+                <input type="text" class="form-control" id="itemName" placeholder="Ex: Jogo de panelas">
+            </div>
+            <div class="mb-3">
+                <label for="itemDescription" class="form-label">Descrição</label>
+                <textarea class="form-control" id="itemDescription" rows="3"
+                    placeholder="Ex: Conjunto de panelas antiaderentes, ideal para cozinhar com facilidade."></textarea>
+            </div>
+            <div class="mb-3">
+                <label for="itemPreco" class="form-label">Preço</label>
+                <input type="number" class="form-control" id="itemPreco" placeholder="Ex: 199.99" step="0.01">
+            </div>
+            <div class="mb-3">
+                <label for="itemImage" class="form-label">URL da imagem</label>
+                <input type="url" class="form-control" id="itemImage"
+                    placeholder="Ex: https://www.exemplo.com/panela.jpg">
+            </div>
+            <div class=" mb-3">
+                <label for="itemLink" class="form-label">Link de compra</label>
+                <input type="url" class="form-control" id="itemLink" placeholder="Ex: https://www.exemplo.com/panela">
+            </div>
+            <button type="submit" class="btn btn-primary">Adicionar Item</button>
+    </section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
