@@ -2,3 +2,36 @@ img {
     max-width: 20%;
     height: auto;
 }
+
+.contagem-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    height: 300px;
+    background-color: #f7f1e8;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.unit {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f0e9;
+    border-radius: 4px;
+    padding: 10px 15px;
+    font-size: 24px;
+    color: #333;
+    min-width: 60px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+
+}

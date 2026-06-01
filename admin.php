@@ -34,7 +34,7 @@ autenticar();
                         <a class="nav-link" href="#">Recebidos</a>
                     </li>
                     <li class="nav-item col-4">
-                        <a class="nav-link" href="#">Mensagens</a>
+                        <a class="nav-link" href="mensagens.php">Mensagens</a>
                     </li>
                 </ul>
             </div>
