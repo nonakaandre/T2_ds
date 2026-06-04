@@ -42,18 +42,11 @@ $produtos = $comando->fetchAll();
                         <a class="nav-link" href="#">Recebidos</a>
                     </li>
                     <li class="nav-item col-4">
-                        <a class="nav-link" href="#">Mensagens</a>
+                        <a class="nav-link" href="mensagens.php">Mensagens</a>
                     </li>
                 </ul>
             </div>
     </nav>
-
-    <?php if (isset($_GET['sucesso'])): ?>
-    <div class="alert alert-success text-danger alert-dismissible fade show m-3 mt-5" role="alert">
-        Item excluido com sucesso!
-        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-    </div>
-    <?php endif; ?>
 
     <div class="container mt-5 pt-5">
         <h1>Lista de Presentes Cadastrados</h1>
@@ -74,7 +67,7 @@ $produtos = $comando->fetchAll();
                 <td><img src="<?= htmlspecialchars($produto['imagem']) ?>" alt="Imagem do produto" width="100"></td>
                 <td><a href="<?= htmlspecialchars($produto['link']) ?>" target="_blank" class="text-decoration-none">Ver
                         Produto</a></td>
-                <td><a href="form_alterar.php?=<?= $produto ['id'] ?>"
+                <td><a href="form_alterar.php?id=<?= $produto['id'] ?>"
                         class="text-decoration-none text-warning">Alterar</a>
 
                     <a href="excluir.php?id=<?= $produto ['id'] ?>" class="text-decoration-none text-danger">Excluir</a>
@@ -87,7 +80,7 @@ $produtos = $comando->fetchAll();
 
 
 
-    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
     </script>
 </body>

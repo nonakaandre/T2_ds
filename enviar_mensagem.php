@@ -16,7 +16,7 @@ require("conexao.php");
 
 <body class="d-flex align-items-center justify-content-center py-4">
 
-    <div class="container">
+    <div class="container vh-100 d-flex align-items-center justify-content-center">
         <div class="card p-4 mx-auto" style="max-width: 500px;">
             <h4 class="text-center mb-4">Deixe uma mensagem para os noivos </h4>
             <form action="gravar_mensagem.php" method="POST">
