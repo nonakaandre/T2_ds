@@ -56,7 +56,8 @@ $produtos = $comando->fetchAll();
                 <th>Descrição</th>
                 <th>Preço</th>
                 <th>Imagem</th>
-                <th>Link</th>
+                <th class=" col-1">Link</th>
+                <th> </th>
             </tr>
             <?php foreach ($produtos as $produto): ?>
             <tr>
@@ -64,7 +65,13 @@ $produtos = $comando->fetchAll();
                 <td><?= htmlspecialchars($produto['descricao']) ?></td>
                 <td><?= htmlspecialchars($produto['preco']) ?></td>
                 <td><img src="<?= htmlspecialchars($produto['imagem']) ?>" alt="Imagem do produto" width="100"></td>
-                <td><a href="<?= htmlspecialchars($produto['link']) ?>" target="_blank">Ver Produto</a></td>
+                <td><a href="<?= htmlspecialchars($produto['link']) ?>" target="_blank" class="text-decoration-none">Ver
+                        Produto</a></td>
+                <td><a href="form_alterar.php?=<?= $produto ['id'] ?>"
+                        class="text-decoration-none text-warning">Alterar</a>
+
+                    <a href="excluir.php?id=<?= $produto ['id'] ?>" class="text-decoration-none text-danger">Excluir</a>
+                </td>
             </tr>
             <?php endforeach; ?>
         </table>

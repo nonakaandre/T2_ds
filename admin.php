@@ -103,8 +103,8 @@ autenticar();
             </div>
             <div class=" mb-3">
                 <label for="itemLink" class="form-label">Link de compra</label>
-                <input type="url" class="form-control" id="itemLink" name="itemLink"
-                    placeholder="Informe o link de compra do item" required>
+                <input type="url" class="form-control" id="itemLink" name="itemLink" rows="2"
+                    rows=placeholder=" Informe o link de compra do item" required>
             </div>
             <button type="submit" class="btn btn-primary">Adicionar Item</button>
     </section>
