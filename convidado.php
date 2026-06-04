@@ -51,7 +51,7 @@ $produtos = $comado->fetchAll();
     </nav>
     <?php if (isset($_GET['sucesso'])): ?>
     <div class="alert alert-success alert-dismissible fade show m-3 mt-5" role="alert">
-        Agradecemos muitopelo seu presente! Sua confirmação foi registrada com sucesso.
+        Agradecemos muito pelo seu presente! Sua confirmação foi registrada com sucesso.
         <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
     </div>
     <?php endif; ?>

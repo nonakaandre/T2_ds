@@ -30,7 +30,7 @@ $produtos = $comando->fetchAll();
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item col-3">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="admin.php">Home</a>
                     </li>
                     <li class="nav-item col-5">
                         <a class="nav-link" href="admin.php">Adicionar a lista</a>
@@ -47,6 +47,13 @@ $produtos = $comando->fetchAll();
                 </ul>
             </div>
     </nav>
+
+    <?php if (isset($_GET['sucesso'])): ?>
+    <div class="alert alert-success text-danger alert-dismissible fade show m-3 mt-5" role="alert">
+        Item excluido com sucesso!
+        <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+    </div>
+    <?php endif; ?>
 
     <div class="container mt-5 pt-5">
         <h1>Lista de Presentes Cadastrados</h1>

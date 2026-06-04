@@ -22,7 +22,7 @@ autenticar();
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item col-3">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="admin.php">Home</a>
                     </li>
                     <li class="nav-item col-5">
                         <a class="nav-link" href="#lista">Adicionar a lista</a>
@@ -77,7 +77,7 @@ autenticar();
     </div>
 
     <section class="container mt-4" id="lista">
-        <h1>Lista de Presentes</h1>
+        <h1>Adicionar presentes a lista</h1>
         <h2>Adicionar itens</h2>
         <form action="incluir_produto.php" method="POST">
             <div class="mb-3">
@@ -104,7 +104,7 @@ autenticar();
             <div class=" mb-3">
                 <label for="itemLink" class="form-label">Link de compra</label>
                 <input type="url" class="form-control" id="itemLink" name="itemLink" rows="2"
-                    rows=placeholder=" Informe o link de compra do item" required>
+                    placeholder=" Informe o link de compra do item" required>
             </div>
             <button type="submit" class="btn btn-primary">Adicionar Item</button>
     </section>
