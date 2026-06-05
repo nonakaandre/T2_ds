@@ -77,7 +77,7 @@ autenticar();
     </div>
 
     <section class="container mt-4" id="lista">
-        <h1>Adicionar presentes a lista</h1>
+        <h1 class=" fw-bold">Adicionar presentes a lista</h1>
         <h2>Adicionar itens</h2>
         <form action="incluir_produto.php" method="POST">
             <div class="mb-3">

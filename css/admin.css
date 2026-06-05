@@ -1,6 +1,12 @@
 body {
-    padding-top: 80px;
-   }
+    
+    margin-top: 80px;
+     background-image: url('../image/cartorio.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: space;
+    
+}
 
 .page {
     display: flex;
@@ -8,6 +14,7 @@ body {
     justify-content: space-evenly;
     margin-top: 80px;
     margin-bottom: 50px;
+    
 }
 
 .contagem-card {
@@ -16,7 +23,7 @@ body {
     justify-content: center;
     width: 60%;
     height: 300px;
-    background-color: rgb(118, 118, 118);
+    background-color: rgb(168, 168, 168);
     border-radius: 8px;
     padding: 20px;
     text-align: center;
@@ -34,6 +41,7 @@ body {
 h1 {
     text-align: center;
     margin-bottom: 30px;
+    
 }
 
 .timer {
@@ -46,13 +54,12 @@ h1 {
 .unit {
     display: flex;
     flex-direction: column;
-    background-color: #ababab;
+    background-color: #7b7b7b;
     border-radius: 4px;
     padding: 10px 15px;
     font-size: 24px;
     color: #333;
     min-width: 60px;
-
 }
 
 .unit-label {
@@ -60,3 +67,4 @@ h1 {
     color: #666;
     margin-top: 5px;
 }
+
